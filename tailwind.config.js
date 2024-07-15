@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 
-const withMT = require("@material-tailwind/html/utils/withMT");
-module.exports = withMT({
+
+module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
      
-      // fontFamily:{
-      //   messina : [ 'Messina Sans', 'sans-serif']
-      // },
+      fontFamily:{
+        messina : [ 'Messina Sans', 'sans-serif'],
+
+      },
       backgroundSize: {
         
         'half': '449px 420px',
@@ -18,4 +19,4 @@ module.exports = withMT({
     },
   },
   plugins: [],
-})
+}
